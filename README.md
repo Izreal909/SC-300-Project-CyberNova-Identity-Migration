@@ -51,18 +51,37 @@ This repository documents a comprehensive identity migration and governance depl
     *   **Identity Protection:** Blocked access for the `SG-IT-Security` group if Entra ID detected High or Medium sign-in risk, requiring them to authenticate from compliant devices or trusted locations.
     *   **Trusted Locations:** Defined specific home/office IP ranges as Named Locations to bypass MFA prompts safely when users are on secure networks.
 
- ![
+ ![enable-sspr](Screenshots/enable-sspr.png)
+ 
+ ![mfa-ca](Screenshots/mfa-ca.png)
+
+ ![mfa-ca2](Screenshots/mfa-ca2.png)
+
+ ![it-ca](Screenshots/it-ca.png)
+
+ ![it-ca2](Screenshots/it-ca2.png)
+
+ ![name-locations-ca](Screenshots/name-locations-ca.png)
+
+ ![password-reset](Screenshots/password-reset.png)
+
+ ![mfa-setup](Screenshots/mfa-setup.png)
+
+ ![password-registry](Screenshots/password-registry.png)
+
+ 
+ 
 
 
 
 ---
 
 ## ⚙️ Phase 3: Workload Identities & App Integration
-**Objective:** Integrate applications and manage how identities interact with workloads[cite: 1].
+**Objective:** Integrate applications and manage how identities interact with workloads.
 
-*   **SaaS Application Registration:** Registered an Enterprise Application named `CyberNova Engineering Portal`[cite: 1]. Granted delegated `User.Read.All` API permissions with tenant-wide admin consent[cite: 1].
-*   **Access Restriction:** Enforced assignment requirements on the portal and restricted access exclusively to the `SG-Engineering` dynamic group[cite: 1].
-*   **Managed Identities:** Deployed a User-Assigned Managed Identity (`MI-CyberNova-Automation`) and granted it "Reader" Role-Based Access Control (RBAC) over a resource group to securely authorize workload automation without relying on static credentials[cite: 1].
+*   **SaaS Application Registration:** Registered an Enterprise Application named `CyberNova Engineering Portal`. Granted delegated `User.Read.All` API permissions with tenant-wide admin consent.
+*   **Access Restriction:** Enforced assignment requirements on the portal and restricted access exclusively to the `SG-Engineering` dynamic group.
+*   **Managed Identities:** Deployed a User-Assigned Managed Identity (`MI-CyberNova-Automation`) and granted it "Reader" Role-Based Access Control (RBAC) over a resource group to securely authorize workload automation without relying on static credentials.
 
 *[Insert Screenshot: Enterprise Application Properties or Managed Identity Overview]*
 
