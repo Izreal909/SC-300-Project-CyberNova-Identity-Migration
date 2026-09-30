@@ -51,6 +51,8 @@ This repository documents a comprehensive identity migration and governance depl
     *   **Identity Protection:** Blocked access for the `SG-IT-Security` group if Entra ID detected High or Medium sign-in risk, requiring them to authenticate from compliant devices or trusted locations.
     *   **Trusted Locations:** Defined specific home/office IP ranges as Named Locations to bypass MFA prompts safely when users are on secure networks.
 
+ ![
+
 
 
 ---
