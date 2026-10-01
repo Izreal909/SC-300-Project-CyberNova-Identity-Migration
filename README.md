@@ -115,7 +115,26 @@ This repository documents a comprehensive identity migration and governance depl
 *   **Privileged Identity Management (PIM):** Secured the User Administrator role by requiring MFA on activation, enforcing business justification, and capping Just-In-Time (JIT) activation durations to 4 hours. Assigned IT Support Admins as eligible candidates rather than permanently active admins.
 *   **Automated Access Reviews:** Configured recurring access reviews targeting the `SG-IT-Security` group. Configured the system to automatically revoke access ("Remove access") if the designated manager fails to respond, mitigating the risk of stale administrative accounts.
 
-*[Insert Screenshot: PIM Activation Flow or Access Review Dashboard]*
+![access-package](Screenshots/access-package.png)
+
+![microsoft-entra-roles](Screenshots/microsft-entra-roles.png)
+
+![access-package2](Screenshots/access-package2.png)
+
+![select-apps](Screenshots/select-apps.png)
+
+![resource-roles](Screenshots/resource-roles.png)
+
+![requests](Screenshots/requests.png)
+
+![lifecycle](Screenshots/lifecycle.png)
+
+![pim-setup](Screenshots/pim-setup.png)
+
+![myroles](Screenshots/myroles.png)
+
+![active-assignments](Screenshots/active-assignments.png)
+
 
 ---
 **Author:** Elijah Howard 
