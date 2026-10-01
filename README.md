@@ -83,16 +83,37 @@ This repository documents a comprehensive identity migration and governance depl
 *   **Access Restriction:** Enforced assignment requirements on the portal and restricted access exclusively to the `SG-Engineering` dynamic group.
 *   **Managed Identities:** Deployed a User-Assigned Managed Identity (`MI-CyberNova-Automation`) and granted it "Reader" Role-Based Access Control (RBAC) over a resource group to securely authorize workload automation without relying on static credentials.
 
-*[Insert Screenshot: Enterprise Application Properties or Managed Identity Overview]*
+![app-registration](Screenshots/app-registration.png)
+
+![grant-admin](Screenshots/grant-admin.png)
+
+![enterprise-apps](Screenshots/enterprise-apps.png)
+
+![assignment-required](Screenshots/assignment-required.png)
+
+![add-users](Screenshots/add-users.png)
+
+![add-groups](Screenshots/add-groups.png)
+
+![managed-identities](Screenshots/managed-identities.png)
+
+![managed-identities2](Screenshots/managed-identities.png)
+
+![logic-apps](Screenshots/logic-apps.png)
+
+![user-identities](Screenshots/user-identities.png)
+
+![identity](Screenshots/identity.png)
+
 
 ---
 
 ## 🛡️ Phase 4: Identity Governance Automation
-**Objective:** Enforce least privilege, manage lifecycles, and audit access[cite: 1].
+**Objective:** Enforce least privilege, manage lifecycles, and audit access.
 
-*   **Entitlement Management:** Designed an Access Package named `Sales Onboarding Kit` containing the `SG-Sales` group and relevant Enterprise Applications[cite: 1]. Configured approval workflows requiring sign-off from Sales Managers and established a 180-day access lifecycle expiration[cite: 1].
-*   **Privileged Identity Management (PIM):** Secured the User Administrator role by requiring MFA on activation, enforcing business justification, and capping Just-In-Time (JIT) activation durations to 4 hours[cite: 1]. Assigned IT Support Admins as eligible candidates rather than permanently active admins[cite: 1].
-*   **Automated Access Reviews:** Configured recurring access reviews targeting the `SG-IT-Security` group[cite: 1]. Configured the system to automatically revoke access ("Remove access") if the designated manager fails to respond, mitigating the risk of stale administrative accounts[cite: 1].
+*   **Entitlement Management:** Designed an Access Package named `Sales Onboarding Kit` containing the `SG-Sales` group and relevant Enterprise Applications[cite: 1]. Configured approval workflows requiring sign-off from Sales Managers and established a 180-day access lifecycle expiration.
+*   **Privileged Identity Management (PIM):** Secured the User Administrator role by requiring MFA on activation, enforcing business justification, and capping Just-In-Time (JIT) activation durations to 4 hours. Assigned IT Support Admins as eligible candidates rather than permanently active admins.
+*   **Automated Access Reviews:** Configured recurring access reviews targeting the `SG-IT-Security` group. Configured the system to automatically revoke access ("Remove access") if the designated manager fails to respond, mitigating the risk of stale administrative accounts.
 
 *[Insert Screenshot: PIM Activation Flow or Access Review Dashboard]*
 
