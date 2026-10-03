@@ -8,6 +8,21 @@ This repository documents a comprehensive identity migration and governance depl
 *   **User Base:** 200+ employees across Engineering, Sales, Operations, and IT/Security
 *   **Core Technologies:** Microsoft Entra ID, PowerShell, Microsoft Graph API, Conditional Access, Privileged Identity Management (PIM)
 
+## 🎯 Key Objectives & Skills Demonstrated
+* **Identity & Access Management (IAM):** Configured cloud-only and hybrid identity models.
+* **Zero Trust Security:** Implemented Multi-Factor Authentication (MFA) and granular Conditional Access Policies.
+* **Role-Based Access Control (RBAC):** Designed custom administrative units and delegated administrative roles.
+* **Automation & Scripting:** Developed PowerShell and Microsoft Graph API scripts for automated user provisioning and offboarding.
+* **Enterprise Applications:** Integrated third-party SaaS applications using SAML and OIDC for Single Sign-On (SSO).
+
+## 🏗️ Architecture & Scenario
+**Scenario:** CyberNova, a rapidly growing tech startup, required a secure, scalable identity solution to replace its legacy on-premises infrastructure.
+
+**Environment:**
+* Microsoft Entra ID (Premium P2)
+* Microsoft Graph API
+* PowerShell (MgGraph modules)
+
 ---
 
 ## 🛠️ Phase 1: Implement and Manage User Identities
@@ -134,6 +149,18 @@ This repository documents a comprehensive identity migration and governance depl
 ![myroles](Screenshots/myroles.png)
 
 ![active-assignments](Screenshots/active-assignments.png)
+
+## 💻 Included Scripts
+Located in the `/scripts` directory of this repository:
+* `Provision-Users.ps1` - Bulk user creation from CSV mapping.
+* `Offboard-User.ps1` - Automated termination script (revokes sessions, removes group memberships, resets passwords).
+* `Audit-StaleAccounts.ps1` - Queries Graph API for accounts inactive for over 90 days.
+
+## 🚀 Lessons Learned
+* Migrating automation scripts to the Microsoft Graph PowerShell SDK provided significant performance improvements and deeper integration capabilities compared to legacy modules.
+* Fine-tuning Conditional Access policies requires careful testing using "Report-only" mode to avoid accidentally locking out legitimate administrative sessions.
+
+---
 
 
 ---
