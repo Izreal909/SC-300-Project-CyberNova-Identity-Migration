@@ -132,7 +132,7 @@ This repository documents a comprehensive identity migration and governance depl
 
 ![access-package](Screenshots/access-package.png)
 
-![microsoft-entra-roles](Screenshots/microsft-entra-roles.png)
+![microsoft-entra-roles](Screenshots/microsoft-entra-roles.png)
 
 ![access-package2](Screenshots/access-package2.png)
 
